@@ -1,0 +1,43 @@
+@import "~tailwindcss/base";
+@import "~tailwindcss/components";
+@import "~tailwindcss/utilities";
+
+// Fonts
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200;300;400;600;700;900&display=swap');
+
+html, body {
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+.hero-bg {
+    position: relative !important;
+    padding-top: 133.33333333333331% !important;
+}
+
+@media (min-width: 744px) {
+    .hero-bg {
+        padding-top:100% !important;
+    }
+}
+
+@media (min-width: 1128px) {
+    .hero-bg {
+        padding-top:56.25% !important;
+    }
+
+    @supports (padding: min(0px, 1px)) {
+        .hero-bg {
+            padding-top:max(550px, min(85vh, 56.25%)) !important;
+        }
+    }
+}
+
+.logo {
+    font-family: 'Poppins', sans-serif;
+}
+
+.date-chooser {
+    transition: transform 150ms ease, opacity 50ms ease 20ms, pointer-events 0ms 150ms !important
+}
+
